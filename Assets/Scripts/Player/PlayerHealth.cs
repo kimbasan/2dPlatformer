@@ -21,7 +21,6 @@ public class PlayerHealth : MonoBehaviour
 
     private void PlayerHealth_Death(object sender, System.EventArgs e)
     {
-        Debug.Log("player died");
         playerAnimator.SetBool(Constants.IS_DEAD, true);
         playerInput.enabled = false;
         StartCoroutine(ShowGameOverScreen());

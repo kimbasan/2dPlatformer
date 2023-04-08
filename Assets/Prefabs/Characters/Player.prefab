@@ -183,7 +183,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   groundColliderTransform: {fileID: 166830718907355350}
-  jumpOffset: 1.1
+  jumpOffset: 0.8
   isGrounded: 0
   groundMask:
     serializedVersion: 2

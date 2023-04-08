@@ -10,8 +10,11 @@ public class ExplosiveBarrel : MonoBehaviour
 
     public void CatchFire()
     {
-        fire.SetActive(true);
-        StartCoroutine(ExplodeAfterWait());
+        if (gameObject.activeSelf)
+        {
+            fire.SetActive(true);
+            StartCoroutine(ExplodeAfterWait());
+        }
     }
 
     public void Explode()

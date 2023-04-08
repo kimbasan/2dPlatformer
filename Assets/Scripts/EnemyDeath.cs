@@ -14,7 +14,6 @@ public class EnemyDeath : MonoBehaviour
 
     private void Health_Death(object sender, System.EventArgs e)
     {
-        Debug.Log("Death happened");
         Destroy(gameObject);
         foreach (Collider2D collider in colliders)
         {

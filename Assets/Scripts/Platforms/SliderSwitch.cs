@@ -7,7 +7,7 @@ public class SliderSwitch : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Slider" && OnSliderReached != null)
+        if (collision.gameObject.CompareTag(Constants.SLIDER) && OnSliderReached != null)
         {
             OnSliderReached(this, EventArgs.Empty);
         }

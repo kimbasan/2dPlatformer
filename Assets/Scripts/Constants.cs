@@ -16,6 +16,7 @@ public class Constants
     #region Tags
 
     public static readonly string DAMAGEABLE = "Damageable";
+    public static readonly string SLIDER = "Slider";
 
     #endregion
 
