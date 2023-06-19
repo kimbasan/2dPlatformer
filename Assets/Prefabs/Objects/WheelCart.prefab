@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5285324419619559211}
   - component: {fileID: 5285324419619559212}
   - component: {fileID: 5285324419619559213}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallerWheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,11 +99,11 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 30
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 18b5f1b9b70c60241af679334550197e, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -117,7 +117,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 5285324419619559214}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 18b5f1b9b70c60241af679334550197e, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -141,8 +141,8 @@ WheelJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.20698309, y: -0.37460542}
   m_Suspension:
-    m_DampingRatio: 0.1
-    m_Frequency: 5
+    m_DampingRatio: 0.01
+    m_Frequency: 20
     m_Angle: 90
   m_UseMotor: 0
   m_Motor:
@@ -161,7 +161,7 @@ GameObject:
   - component: {fileID: 5285324419763417269}
   - component: {fileID: 5285324419763417270}
   - component: {fileID: 5285324419763417271}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -247,11 +247,11 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 50
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 18b5f1b9b70c60241af679334550197e, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -265,7 +265,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 5285324419763417256}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 18b5f1b9b70c60241af679334550197e, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -289,8 +289,8 @@ WheelJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: -1.220017, y: -0.11155558}
   m_Suspension:
-    m_DampingRatio: 0.1
-    m_Frequency: 5
+    m_DampingRatio: 0.01
+    m_Frequency: 20
     m_Angle: 90
   m_UseMotor: 0
   m_Motor:
@@ -370,7 +370,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2120567183
   m_SortingLayer: 7
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300116, guid: 7810966f0f690954c87305933cabf2b0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -436,11 +436,11 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 300
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 18b5f1b9b70c60241af679334550197e, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0

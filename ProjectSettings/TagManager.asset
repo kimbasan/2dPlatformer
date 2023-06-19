@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Slider
   - Damageable
+  - EnemyStopper
+  - RedBarrel
   layers:
   - Default
   - TransparentFX
@@ -14,12 +16,12 @@ TagManager:
   - Water
   - UI
   - Ground
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Wheels
+  - Player
+  - Enemy
+  - Collectable
+  - Projectile
+  - PlayerTrigger
   - 
   - 
   - 
@@ -43,6 +45,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: ParallaxBack
+    uniqueID: 1690177729
+    locked: 0
+  - name: ParallaxMiddle
+    uniqueID: 815697209
+    locked: 0
+  - name: Objects
+    uniqueID: 315381715
+    locked: 0
   - name: Background
     uniqueID: 1843227965
     locked: 0
@@ -52,8 +63,8 @@ TagManager:
   - name: Ground
     uniqueID: 2456705385
     locked: 0
-  - name: Objects
-    uniqueID: 315381715
+  - name: Characters
+    uniqueID: 2120567183
     locked: 0
   - name: Water
     uniqueID: 2935824353
@@ -61,6 +72,15 @@ TagManager:
   - name: Platform
     uniqueID: 3765742197
     locked: 0
-  - name: Characters
-    uniqueID: 2120567183
+  - name: Foreground
+    uniqueID: 2143242647
+    locked: 0
+  - name: ParallaxForeground
+    uniqueID: 2780121113
+    locked: 0
+  - name: ViewBlocker
+    uniqueID: 3527124073
+    locked: 0
+  - name: UI
+    uniqueID: 2286277187
     locked: 0

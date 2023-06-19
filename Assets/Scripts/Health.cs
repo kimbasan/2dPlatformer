@@ -6,11 +6,13 @@ public class Health : MonoBehaviour
 {
     [Header("Start value")]
     [SerializeField] private float maxHealth;
-    [Header("Game values")]
-    [SerializeField] private float currentHealth;
-    [SerializeField] private bool isAlive;
+
     [Header("View")]
     [SerializeField] private SpriteRenderer sprite;
+
+    [Header("Readonly debug")]
+    [SerializeField] private float currentHealth;
+    [SerializeField] private bool isAlive;
 
     public event EventHandler HealthChanged;
     public event EventHandler Death;
@@ -32,10 +34,7 @@ public class Health : MonoBehaviour
         {
             currentHealth -= damage;
             ShowDamageTaken();
-            if (HealthChanged != null)
-            {
-                HealthChanged(this, EventArgs.Empty);
-            }
+            TriggerHealthChanged();
             CheckAlive();
         }
     }
@@ -49,6 +48,24 @@ public class Health : MonoBehaviour
             {
                 Death(this, EventArgs.Empty);
             }
+        }
+    }
+
+    public void AddHealth(float heal)
+    {
+        currentHealth+= heal;
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+        TriggerHealthChanged();
+    }
+
+    private void TriggerHealthChanged()
+    {
+        if (HealthChanged != null)
+        {
+            HealthChanged(this, EventArgs.Empty);
         }
     }
 

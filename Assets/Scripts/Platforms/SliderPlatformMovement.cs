@@ -6,8 +6,6 @@ public class SliderPlatformMovement : MonoBehaviour
     [SerializeField] private SliderJoint2D sliderJoint;
     [SerializeField] private SliderSwitch[] switches;
 
-    public event EventHandler OnSliderReachEnd;
-
     void Start()
     {
         foreach(SliderSwitch sliderSwitch in switches)

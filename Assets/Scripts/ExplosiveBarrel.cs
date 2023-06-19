@@ -7,8 +7,11 @@ public class ExplosiveBarrel : MonoBehaviour
     [SerializeField] private PointEffector2D explosionEffector;
     [SerializeField] private GameObject fire;
     [SerializeField] private List<GameObject> exposionParticles;
+    [SerializeField] private GameObject sprite;
+    [SerializeField] private Collider2D barrelCollider;
+    [SerializeField] private Rigidbody2D rigidBody;
 
-    public void CatchFire()
+    public void StartExplosionTimer()
     {
         if (gameObject.activeSelf)
         {
@@ -35,9 +38,13 @@ public class ExplosiveBarrel : MonoBehaviour
 
     private IEnumerator RemoveAfterWait()
     {
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.2f);
         explosionEffector.enabled = false;
         fire.SetActive(false);
+        sprite.SetActive(false);
+        rigidBody.bodyType = RigidbodyType2D.Kinematic;
+        barrelCollider.enabled = false;
+        yield return new WaitForSeconds(5f);
         gameObject.SetActive(false);
     }
 }

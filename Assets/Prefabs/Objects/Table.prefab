@@ -75,8 +75,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 315381715
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300172, guid: 7810966f0f690954c87305933cabf2b0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -101,7 +101,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 4
+  m_Mass: 70
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -210,45 +210,45 @@ CompositeCollider2D:
     m_ColliderPaths:
     - - X: 11406250
         Y: 6450637
-      - X: 11406250
+      - X: 11406249
         Y: 8750001
-      - X: -11406250
+      - X: -11406251
         Y: 8749999
       - X: -11406250
-        Y: 6450636
+        Y: 6450635
   - m_Collider: {fileID: 6723409327003354703}
     m_ColliderPaths:
-    - - X: -7550655
-        Y: 8750000
-      - X: -9853743
-        Y: 8750000
+    - - X: -7550656
+        Y: 8749999
+      - X: -9853744
+        Y: 8749999
       - X: -9853743
         Y: 81709
       - X: -7550655
         Y: 81709
   - m_Collider: {fileID: 6723409327003354700}
     m_ColliderPaths:
-    - - X: 9772035
-        Y: 8750000
+    - - X: 9772034
+        Y: 8750001
       - X: 7632366
-        Y: 8750000
+        Y: 8750001
       - X: 7632366
-        Y: 81709
+        Y: 81710
       - X: 9772035
-        Y: 81709
+        Y: 81710
   m_CompositePaths:
     m_Paths:
     - - {x: -0.7550948, y: 0.0081709}
-      - {x: -0.7550361, y: 0.6450636}
+      - {x: -0.75503623, y: 0.6450635}
       - {x: 0.7632366, y: 0.6450343}
-      - {x: 0.7632659, y: 0.0081709}
-      - {x: 0.9772035, y: 0.0082002}
-      - {x: 0.97723293, y: 0.6450637}
+      - {x: 0.7632659, y: 0.0081710005}
+      - {x: 0.9772035, y: 0.0082003}
+      - {x: 0.9772328, y: 0.6450637}
       - {x: 1.140625, y: 0.645093}
-      - {x: 1.1405957, y: 0.8750001}
-      - {x: -1.140625, y: 0.8749706}
-      - {x: -1.1405957, y: 0.6450636}
-      - {x: -0.98537433, y: 0.6450342}
+      - {x: 1.1405956, y: 0.8750001}
+      - {x: -1.1406251, y: 0.8749706}
+      - {x: -1.1405957, y: 0.6450635}
+      - {x: -0.9853744, y: 0.64503413}
       - {x: -0.985345, y: 0.0081709}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005

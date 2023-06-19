@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class DamageDealer : MonoBehaviour
@@ -9,9 +8,10 @@ public class DamageDealer : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.attachedRigidbody.CompareTag(Constants.DAMAGEABLE))
+        if (collision.CompareTag(Constants.DAMAGEABLE))
         {
-            DealDamage(collision.attachedRigidbody.gameObject);
+            Debug.Log("Adding damage!");
+            DealDamage(collision.gameObject);
         }
     }
 
@@ -19,16 +19,36 @@ public class DamageDealer : MonoBehaviour
     {
         if (collision.gameObject.CompareTag(Constants.DAMAGEABLE))
         {
+            Debug.Log("Adding damage!");
             DealDamage(collision.gameObject);
         }
     }
 
     private void DealDamage(GameObject target)
     {
-        target.GetComponent<Health>().TakeDamage(damage);
-        if (destroyOnCollide)
+        var health = target.GetComponent<PlayerHealth>();
+        if (health == null)
         {
-            Destroy(gameObject);
+            health = target.GetComponentInParent<PlayerHealth>();
+        }
+        if (health != null && enabled)
+        {
+            health.AddDamage(damage, transform.position);
+            if (destroyOnCollide)
+            {
+                gameObject.SetActive(false);
+            }
+        } else
+        {
+            var enemyHealth = target.GetComponent<Health>();
+            if (enemyHealth!= null && enabled)
+            {
+                enemyHealth.TakeDamage(damage);
+                if (destroyOnCollide)
+                {
+                    gameObject.SetActive(false);
+                }
+            }
         }
     }
 }
